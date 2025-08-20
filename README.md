@@ -94,7 +94,11 @@ Always consult a licensed clinician for health decisions.
 * Suggested questions to ask your doctor
 
 
+🧑‍💻 Author
 
+Deepesh Singh
+
+💡 AI/ML | GenAI | LangChain | Applied Research | Robotics
 
 
 
