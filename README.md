@@ -168,5 +168,5 @@ AI/ML | Generative AI | Applied Research | Robotics
 
 <div align="center">
 
-### "Transforming clinical data into human understandin
+### "Transforming clinical data into human understanding
 
