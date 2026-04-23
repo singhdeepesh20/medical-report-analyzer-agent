@@ -26,7 +26,7 @@ The goal is to bridge the gap between **clinical data and patient understanding*
 * 🚨 **Red Flag Identification** → Highlights critical findings requiring attention
 * 💡 **Next-Step Guidance** → Suggests lifestyle changes & questions for doctors
 * ⚡ **Fast Inference** → Powered by Groq (LLaMA 3 – 70B)
-* 🔍 **Efficient Retrieval** → FAISS-based semantic search over report conten
+* 🔍 **Efficient Retrieval** → FAISS-based semantic search over report content
 
 ---
 
