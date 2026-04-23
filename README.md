@@ -1,6 +1,6 @@
 <div align="center">
 
-# Medical Report Analyzer Agen
+# Medical Report Analyzer Agent
 
 ### AI-Powered Clinical Report Understanding & Insight Generation
 
