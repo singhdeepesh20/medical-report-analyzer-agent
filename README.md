@@ -66,7 +66,7 @@ Summary + Insights + Alerts
 <hr/>
 
 <!-- 🔥 TECH STACK -->
-<h2>🛠️ Tech Stack</h2>
+<h2> Tech Stack</h2>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python" />
@@ -80,7 +80,7 @@ Summary + Insights + Alerts
 <hr/>
 
 <!-- 🔥 USAGE -->
-<h2>📋 Usage Workflow</h2>
+<h2> Usage Workflow</h2>
 
 <ol>
   <li>Upload your <b>medical report PDF</b></li>
@@ -105,7 +105,7 @@ Summary + Insights + Alerts
 <hr/>
 
 <!-- 🔥 OUTPUT -->
-<h2>📊 Example Insights</h2>
+<h2> Example Insights</h2>
 
 <ul>
   <li><b>Summary:</b> Patient-friendly report explanation</li>
@@ -118,37 +118,37 @@ Summary + Insights + Alerts
 <hr/>
 
 <!-- 🔥 APPLICATIONS -->
-<h2>🏥 Healthcare Applications</h2>
+<h2> Healthcare Applications</h2>
 
-<h3>🧑‍🤝‍🧑 Patient Education</h3>
+<h3> Patient Education</h3>
 <ul>
   <li>Simplifies medical complexity</li>
   <li>Improves patient awareness</li>
 </ul>
 
-<h3>🩸 Lab Report Analysis</h3>
+<h3> Lab Report Analysis</h3>
 <ul>
   <li>Fast abnormality detection</li>
   <li>Context-rich explanations</li>
 </ul>
 
-<h3>🏥 Hospital Support</h3>
+<h3> Hospital Support</h3>
 <ul>
   <li>Pre-consultation understanding</li>
   <li>Reduced repetitive communication burden</li>
 </ul>
 
-<h3>📑 Prescription Clarity</h3>
+<h3> Prescription Clarity</h3>
 <ul>
   <li>Explains treatment plans clearly</li>
 </ul>
 
-<h3>🌍 Rural Healthcare</h3>
+<h3> Rural Healthcare</h3>
 <ul>
   <li>Supports users with limited healthcare access</li>
 </ul>
 
-<h3>🧑‍⚕️ Clinical Assistance</h3>
+<h3> Clinical Assistance</h3>
 <ul>
   <li>Rapid summarization tool for healthcare professionals</li>
 </ul>
@@ -156,7 +156,7 @@ Summary + Insights + Alerts
 <hr/>
 
 <!-- 🔥 ENGINEERING -->
-<h2>🧠 Engineering Approach</h2>
+<h2> Engineering Approach</h2>
 
 <h3>Retrieval-Augmented Generation (RAG)</h3>
 <ul>
@@ -178,7 +178,7 @@ Summary + Insights + Alerts
 <hr/>
 
 <!-- 🔥 PROJECT VALUE -->
-<h2>📈 What This Project Demonstrates</h2>
+<h2> What This Project Demonstrates</h2>
 
 <ul>
   <li>End-to-end healthcare AI system design</li>
@@ -191,7 +191,7 @@ Summary + Insights + Alerts
 <hr/>
 
 <!-- 🔥 DISCLAIMER -->
-<h2>⚠️ Important Disclaimer</h2>
+<h2> Important Disclaimer</h2>
 
 <p>
 This system is intended for <b>educational and assistive purposes only</b>.
@@ -202,7 +202,7 @@ Always consult licensed healthcare professionals for medical decisions.
 <hr/>
 
 <!-- 🔥 VISION -->
-<h2>🌍 Vision</h2>
+<h2> Vision</h2>
 
 <p>
 To create a future where <b>every patient can understand their medical data clearly</b>, reducing confusion and improving healthcare outcomes through accessible AI systems.
@@ -214,7 +214,7 @@ To create a future where <b>every patient can understand their medical data clea
 <h2>👨‍💻 Author</h2>
 
 <p align="center">
-  <b>Anushka Singh</b><br/>
+  <b>Deepesh Singh</b><br/>
   AI Engineer | Healthcare AI | Generative AI
 </p>
 
