@@ -211,7 +211,7 @@ To create a future where <b>every patient can understand their medical data clea
 <hr/>
 
 <!-- 🔥 AUTHOR -->
-<h2>👨‍💻 Author</h2>
+<h2> Author</h2>
 
 <p align="center">
   <b>Deepesh Singh</b><br/>
