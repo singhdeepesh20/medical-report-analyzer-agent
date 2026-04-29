@@ -1,172 +1,235 @@
-<div align="center">
+<!-- 🔥 HERO BANNER -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:14b8a6&height=200&section=header&text=Medical%20Report%20Analyzer%20Agent&fontSize=32&fontColor=ffffff" />
+</p>
 
-# Medical Report Analyzer Agent
+<h1 align="center">🩺 Medical Report Analyzer Agent</h1>
+<h3 align="center">AI-Powered Clinical Report Understanding & Insight Generation</h3>
 
-### AI-Powered Clinical Report Understanding & Insight Generation
+<hr/>
 
-</div>
+<!-- 🔥 OVERVIEW -->
+<h2>🧠 Overview</h2>
 
----
+<p>
+<b>Medical Report Analyzer Agent</b> is an AI-powered healthcare intelligence system designed to help patients and caregivers <b>understand complex medical reports with clarity, speed, and actionable insights</b>.
+</p>
 
-## Overview
+<p>
+By integrating <b>LangChain, FAISS, HuggingFace embeddings, and Groq LLaMA-3</b>, the system transforms raw PDF medical reports into <b>structured summaries, abnormality detection, and patient-friendly explanations</b>.
+</p>
 
-**Medical Report Analyzer Agent** is an AI-powered healthcare assistant designed to help patients and caregivers **understand complex medical reports** with clarity and speed.
+<p>
+<b>Mission:</b> Bridge the gap between <b>clinical complexity</b> and <b>human understanding</b>.
+</p>
 
-By leveraging **LangChain, FAISS, HuggingFace embeddings, and Groq LLaMA-3 models**, the system transforms raw PDF reports into **structured, patient-friendly insights**, highlighting abnormalities and critical findings.
+<hr/>
 
-The goal is to bridge the gap between **clinical data and patient understanding**, while supporting healthcare workflows.
+<!-- 🔥 FEATURES -->
+<h2>🚀 Key Features</h2>
 
----
+<ul>
+  <li>📄 <b>PDF Upload</b> → Analyze prescriptions, blood reports, lab results, and diagnostic files</li>
+  <li>🧠 <b>AI Summarization</b> → Converts complex reports into simplified explanations</li>
+  <li>⚠️ <b>Abnormal Value Detection</b> → Highlights unusual values with medical context</li>
+  <li>🚨 <b>Red Flag Identification</b> → Detects urgent findings requiring attention</li>
+  <li>💡 <b>Next-Step Guidance</b> → Lifestyle suggestions & doctor consultation prompts</li>
+  <li>⚡ <b>Fast Inference</b> → Powered by Groq LLaMA3 (70B)</li>
+  <li>🔍 <b>Semantic Retrieval</b> → FAISS-powered contextual document search</li>
+</ul>
 
-## Key Features
+<hr/>
 
-* 📄 **PDF Upload** → Analyze medical reports, prescriptions, and lab results
-* 🧠 **AI-Powered Summarization** → Converts complex reports into simple explanations
-* ⚠️ **Abnormal Value Detection** → Identifies unusual lab values with explanations
-* 🚨 **Red Flag Identification** → Highlights critical findings requiring attention
-* 💡 **Next-Step Guidance** → Suggests lifestyle changes & questions for doctors
-* ⚡ **Fast Inference** → Powered by Groq (LLaMA 3 – 70B)
-* 🔍 **Efficient Retrieval** → FAISS-based semantic search over report content
+<!-- 🔥 SYSTEM ARCHITECTURE -->
+<h2>⚙️ System Architecture</h2>
 
----
-
-## System Architecture
-
-```
-PDF Upload → Document Parsing → Text Chunking
-        ↓
- Embeddings (HuggingFace)
-        ↓
-   FAISS Vector Store
-        ↓
+<pre>
+PDF Upload
+    ↓
+Document Parsing
+    ↓
+Text Chunking
+    ↓
+HuggingFace Embeddings
+    ↓
+FAISS Vector Store
+    ↓
 User Query / Prompt
-        ↓
- Retrieval + Context
-        ↓
- Groq LLM (LLaMA3)
-        ↓
- Summary + Insights + Alerts
-```
+    ↓
+Context Retrieval
+    ↓
+Groq LLM (LLaMA3)
+    ↓
+Summary + Insights + Alerts
+</pre>
 
----
+<hr/>
 
-## Tech Stack
+<!-- 🔥 TECH STACK -->
+<h2>🛠️ Tech Stack</h2>
 
-* **Frontend**: Streamlit
-* **LLM**: Groq API (LLaMA3 – 70B)
-* **Framework**: LangChain
-* **Embeddings**: HuggingFace (all-MiniLM-L6-v2)
-* **Vector Database**: FAISS
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python" />
+  <img src="https://img.shields.io/badge/Streamlit-Frontend-red" />
+  <img src="https://img.shields.io/badge/LangChain-AI-blue" />
+  <img src="https://img.shields.io/badge/FAISS-VectorDB-orange" />
+  <img src="https://img.shields.io/badge/HuggingFace-Embeddings-yellow" />
+  <img src="https://img.shields.io/badge/Groq-LLaMA3-green" />
+</p>
 
----
+<hr/>
 
-## Usage
+<!-- 🔥 USAGE -->
+<h2>📋 Usage Workflow</h2>
 
-1. Upload your **medical report (PDF)**
-2. Choose or enter a query:
+<ol>
+  <li>Upload your <b>medical report PDF</b></li>
+  <li>Select or type a query:
+    <ul>
+      <li>Summarize report</li>
+      <li>Highlight abnormal values</li>
+      <li>Identify red flags</li>
+    </ul>
+  </li>
+  <li>Click <b>🔎 Analyze</b></li>
+  <li>Receive:
+    <ul>
+      <li>Simplified report summary</li>
+      <li>Abnormal findings</li>
+      <li>Risk explanations</li>
+      <li>Retrieved evidence from report</li>
+    </ul>
+  </li>
+</ol>
 
-   * Summarize report
-   * Highlight abnormal values
-   * Identify red flags
-3. Click **"🔎 Analyze"**
-4. View:
+<hr/>
 
-   * Simplified summary
-   * Abnormal parameters
-   * Explanations & risks
-   * Retrieved context (relevant report sections)
+<!-- 🔥 OUTPUT -->
+<h2>📊 Example Insights</h2>
 
----
+<ul>
+  <li><b>Summary:</b> Patient-friendly report explanation</li>
+  <li><b>Abnormal Values:</b> “Hemoglobin low”</li>
+  <li><b>Interpretation:</b> “May indicate anemia”</li>
+  <li><b>Red Flags:</b> Critical indicators requiring immediate care</li>
+  <li><b>Doctor Questions:</b> Suggested medical consultation prompts</li>
+</ul>
 
-## Example Output
+<hr/>
 
-* **Summary** → Patient-friendly explanation of the report
-* **Abnormal Values** → e.g., "Hemoglobin low"
-* **Interpretation** → "May indicate anemia"
-* **Red Flags** → Critical indicators needing urgent attention
-* **Doctor Questions** → Suggested queries for consultation
+<!-- 🔥 APPLICATIONS -->
+<h2>🏥 Healthcare Applications</h2>
 
----
+<h3>🧑‍🤝‍🧑 Patient Education</h3>
+<ul>
+  <li>Simplifies medical complexity</li>
+  <li>Improves patient awareness</li>
+</ul>
 
-## Applications in Healthcare
+<h3>🩸 Lab Report Analysis</h3>
+<ul>
+  <li>Fast abnormality detection</li>
+  <li>Context-rich explanations</li>
+</ul>
 
-### 🧑‍🤝‍🧑 Patient Education
+<h3>🏥 Hospital Support</h3>
+<ul>
+  <li>Pre-consultation understanding</li>
+  <li>Reduced repetitive communication burden</li>
+</ul>
 
-* Simplifies medical reports
-* Improves understanding and awareness
+<h3>📑 Prescription Clarity</h3>
+<ul>
+  <li>Explains treatment plans clearly</li>
+</ul>
 
-### 🩸 Lab Report Analysis
+<h3>🌍 Rural Healthcare</h3>
+<ul>
+  <li>Supports users with limited healthcare access</li>
+</ul>
 
-* Identifies abnormal values quickly
-* Provides contextual explanations
+<h3>🧑‍⚕️ Clinical Assistance</h3>
+<ul>
+  <li>Rapid summarization tool for healthcare professionals</li>
+</ul>
 
-### 🏥 Hospital Support
+<hr/>
 
-* Assists in pre-consultation understanding
-* Reduces repetitive explanation workload
+<!-- 🔥 ENGINEERING -->
+<h2>🧠 Engineering Approach</h2>
 
-### 📑 Prescription Understanding
+<h3>Retrieval-Augmented Generation (RAG)</h3>
+<ul>
+  <li>Grounds responses in uploaded reports</li>
+  <li>Reduces hallucination risk</li>
+</ul>
 
-* Clarifies treatment instructions
+<h3>Context-Aware Analysis</h3>
+<ul>
+  <li>Extracts relevant report sections</li>
+  <li>Maintains explainability</li>
+</ul>
 
-### 🌍 Rural Healthcare
+<h3>User-Centric Design</h3>
+<ul>
+  <li>Simple, accessible, actionable outputs</li>
+</ul>
 
-* Helps users understand reports where access to doctors is limited
+<hr/>
 
-### 🧑‍⚕️ Clinical Assistance
+<!-- 🔥 PROJECT VALUE -->
+<h2>📈 What This Project Demonstrates</h2>
 
-* Quick summarization tool for doctors
+<ul>
+  <li>End-to-end healthcare AI system design</li>
+  <li>RAG pipeline implementation</li>
+  <li>Medical document intelligence</li>
+  <li>LLM integration into healthcare workflows</li>
+  <li>Clinical data → actionable patient insights transformation</li>
+</ul>
 
----
+<hr/>
 
-## Engineering Approach
+<!-- 🔥 DISCLAIMER -->
+<h2>⚠️ Important Disclaimer</h2>
 
-### Retrieval-Augmented Generation (RAG)
+<p>
+This system is intended for <b>educational and assistive purposes only</b>.
+It is <b>not a replacement for professional medical advice, diagnosis, or treatment</b>.
+Always consult licensed healthcare professionals for medical decisions.
+</p>
 
-* Ensures responses are grounded in uploaded reports
-* Reduces hallucination
+<hr/>
 
-### Context-Aware Analysis
+<!-- 🔥 VISION -->
+<h2>🌍 Vision</h2>
 
-* Extracts and interprets relevant report segments
-* Maintains traceability of insights
+<p>
+To create a future where <b>every patient can understand their medical data clearly</b>, reducing confusion and improving healthcare outcomes through accessible AI systems.
+</p>
 
-### User-Centric Design
+<hr/>
 
-* Focus on clarity, simplicity, and actionable insights
+<!-- 🔥 AUTHOR -->
+<h2>👨‍💻 Author</h2>
 
----
+<p align="center">
+  <b>Anushka Singh</b><br/>
+  AI Engineer | Healthcare AI | Generative AI
+</p>
 
-## What This Project Demonstrates
+<hr/>
 
-* End-to-end AI healthcare system design
-* Implementation of RAG pipelines for document intelligence
-* Integration of LLMs with structured medical workflows
-* Ability to convert complex data into actionable insights
+<!-- 🔥 FINAL INSIGHT -->
+<h2 align="center">⚡ Final Insight</h2>
 
----
+<p align="center">
+<b>“Transforming clinical data into human understanding.”</b>
+</p>
 
-## Important Disclaimer
+<!-- 🔥 FOOTER -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14b8a6,100:0f172a&height=120&section=footer"/>
+</p>
 
-⚠️ This system is **not a substitute for professional medical advice, diagnosis, or treatment**.
-Always consult a licensed healthcare provider for medical decisions.
-
----
-
-## Vision
-
-To enable a future where **every patient understands their health data clearly**, reducing confusion and improving healthcare outcomes through AI.
-
----
-
-## Author
-
-**Deepesh Singh**
-AI/ML | Generative AI | Applied Research | Robotics
-
----
-
-<div align="center">
-
-### "Transforming clinical data into human understanding
 
