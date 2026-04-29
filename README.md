@@ -9,7 +9,7 @@
 <hr/>
 
 <!-- 🔥 OVERVIEW -->
-<h2>🧠 Overview</h2>
+<h2> Overview</h2>
 
 <p>
 <b>Medical Report Analyzer Agent</b> is an AI-powered healthcare intelligence system designed to help patients and caregivers <b>understand complex medical reports with clarity, speed, and actionable insights</b>.
@@ -26,22 +26,22 @@ By integrating <b>LangChain, FAISS, HuggingFace embeddings, and Groq LLaMA-3</b>
 <hr/>
 
 <!-- 🔥 FEATURES -->
-<h2>🚀 Key Features</h2>
+<h2> Key Features</h2>
 
 <ul>
-  <li>📄 <b>PDF Upload</b> → Analyze prescriptions, blood reports, lab results, and diagnostic files</li>
-  <li>🧠 <b>AI Summarization</b> → Converts complex reports into simplified explanations</li>
-  <li>⚠️ <b>Abnormal Value Detection</b> → Highlights unusual values with medical context</li>
-  <li>🚨 <b>Red Flag Identification</b> → Detects urgent findings requiring attention</li>
-  <li>💡 <b>Next-Step Guidance</b> → Lifestyle suggestions & doctor consultation prompts</li>
-  <li>⚡ <b>Fast Inference</b> → Powered by Groq LLaMA3 (70B)</li>
-  <li>🔍 <b>Semantic Retrieval</b> → FAISS-powered contextual document search</li>
+  <li> <b>PDF Upload</b> → Analyze prescriptions, blood reports, lab results, and diagnostic files</li>
+  <li> <b>AI Summarization</b> → Converts complex reports into simplified explanations</li>
+  <li> <b>Abnormal Value Detection</b> → Highlights unusual values with medical context</li>
+  <li> <b>Red Flag Identification</b> → Detects urgent findings requiring attention</li>
+  <li> <b>Next-Step Guidance</b> → Lifestyle suggestions & doctor consultation prompts</li>
+  <li> <b>Fast Inference</b> → Powered by Groq LLaMA3 (70B)</li>
+  <li> <b>Semantic Retrieval</b> → FAISS-powered contextual document search</li>
 </ul>
 
 <hr/>
 
 <!-- 🔥 SYSTEM ARCHITECTURE -->
-<h2>⚙️ System Architecture</h2>
+<h2> System Architecture</h2>
 
 <pre>
 PDF Upload
