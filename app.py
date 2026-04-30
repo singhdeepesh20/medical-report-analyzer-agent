@@ -37,6 +37,7 @@ def get_text_splitter() -> RecursiveCharacterTextSplitter:
     )
 
 
+
 #FILE HANDLING
 def save_uploaded_file(uploaded_file) -> str:
     """Save uploaded PDF to temporary storage."""
@@ -48,3 +49,39 @@ def save_uploaded_file(uploaded_file) -> str:
         f.write(uploaded_file.getbuffer())
 
     return str(file_path)
+
+
+
+# VECTOR DATABASE
+def ingest_pdf(pdf_path: str, db_path: str) -> FAISS:
+    """Load PDF, split into chunks, embed, and store in FAISS."""
+    loader = PyPDFLoader(pdf_path)
+    documents = loader.load()
+
+    splitter = get_text_splitter()
+    chunks = splitter.split_documents(documents)
+
+    vectordb = FAISS.from_documents(chunks, get_embedding_model())
+    vectordb.save_local(db_path)
+
+    return vectordb
+
+
+def load_vectordb(db_path: str) -> FAISS:
+    """Load existing FAISS index."""
+    return FAISS.load_local(
+        db_path,
+        embeddings=get_embedding_model(),
+        allow_dangerous_deserialization=True,
+    )
+
+
+def get_or_create_vectordb(pdf_path: str, index_dir: str) -> FAISS:
+    """Reuse existing index or create new one."""
+    index_file = Path(index_dir) / "index.faiss"
+
+    if index_file.exists():
+        return load_vectordb(index_dir)
+
+    os.makedirs(index_dir, exist_ok=True)
+    return ingest_pdf(pdf_path, index_dir)
