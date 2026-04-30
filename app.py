@@ -21,7 +21,7 @@ TOP_K_RESULTS = 5
 LLM_MODEL = "llama3-70b-8192"
 
 
-CACHED RESOURCES
+#CACHED RESOURCES
 @st.cache_resource
 def get_embedding_model() -> HuggingFaceEmbeddings:
     """Load embedding model once per session."""
@@ -35,3 +35,16 @@ def get_text_splitter() -> RecursiveCharacterTextSplitter:
         chunk_overlap=CHUNK_OVERLAP,
         separators=["\n\n", "\n", ". ", ".", "?", "!", ",", " "],
     )
+
+
+#FILE HANDLING
+def save_uploaded_file(uploaded_file) -> str:
+    """Save uploaded PDF to temporary storage."""
+    suffix = Path(uploaded_file.name).suffix
+    tmp_dir = tempfile.mkdtemp()
+    file_path = Path(tmp_dir) / f"uploaded{suffix}"
+
+    with open(file_path, "wb") as f:
+        f.write(uploaded_file.getbuffer())
+
+    return str(file_path)
