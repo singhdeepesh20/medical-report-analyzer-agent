@@ -19,3 +19,19 @@ CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 150
 TOP_K_RESULTS = 5
 LLM_MODEL = "llama3-70b-8192"
+
+
+CACHED RESOURCES
+@st.cache_resource
+def get_embedding_model() -> HuggingFaceEmbeddings:
+    """Load embedding model once per session."""
+    return HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+
+
+@st.cache_resource
+def get_text_splitter() -> RecursiveCharacterTextSplitter:
+    return RecursiveCharacterTextSplitter(
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
+        separators=["\n\n", "\n", ". ", ".", "?", "!", ",", " "],
+    )
