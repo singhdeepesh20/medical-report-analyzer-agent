@@ -85,3 +85,36 @@ def get_or_create_vectordb(pdf_path: str, index_dir: str) -> FAISS:
 
     os.makedirs(index_dir, exist_ok=True)
     return ingest_pdf(pdf_path, index_dir)
+
+
+# PROMPT ENGINEERING
+def get_medical_prompt() -> PromptTemplate:
+    return PromptTemplate(
+        template=(
+            "You are a careful, patient-friendly medical AI assistant.\n"
+            "Analyze the provided medical report or prescription.\n\n"
+            "Responsibilities:\n"
+            "1. Summarize in simple patient-friendly language\n"
+            "2. Highlight abnormal findings and significance\n"
+            "3. Provide possible interpretations (not diagnosis)\n"
+            "4. Mention urgent red flags\n"
+            "5. Suggest next steps and doctor discussion points\n\n"
+            "Rules:\n"
+            "- Do NOT replace licensed medical advice\n"
+            "- Do NOT prescribe medications/dosages\n"
+            "- Clearly state uncertainty when present\n"
+            "- Use structured sections\n\n"
+            "<REPORT_CONTEXT>\n{context}\n</REPORT_CONTEXT>\n\n"
+            "Patient Question: {question}\n\n"
+            "Format:\n"
+            "Summary\n"
+            "Findings\n"
+            "Concerns\n"
+            "Possible Interpretations\n"
+            "Red Flags\n"
+            "Next Steps\n"
+            "Questions for Doctor"
+        ),
+        input_variables=["context", "question"],
+    )
+
