@@ -221,7 +221,7 @@ To create a future where <b>every patient can understand their medical data clea
 <hr/>
 
 <!-- 🔥 FINAL INSIGHT -->
-<h2 align="center">⚡ Final Insight</h2>
+<h2 align="center"> Final Insight</h2>
 
 <p align="center">
 <b>“Transforming clinical data into human understanding.”</b>
