@@ -118,3 +118,23 @@ def get_medical_prompt() -> PromptTemplate:
         input_variables=["context", "question"],
     )
 
+
+# LLM CHAIN
+# ==============================
+def build_medical_chain(vectordb: FAISS, groq_api_key: str):
+    llm = ChatGroq(
+        model=LLM_MODEL,
+        api_key=groq_api_key,
+        temperature=0,
+    )
+
+    retriever = vectordb.as_retriever(search_kwargs={"k": TOP_K_RESULTS})
+
+    return RetrievalQA.from_chain_type(
+        llm=llm,
+        retriever=retriever,
+        chain_type="stuff",
+        chain_type_kwargs={"prompt": get_medical_prompt()},
+        return_source_documents=True,
+    )
+
