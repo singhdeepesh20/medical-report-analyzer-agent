@@ -120,7 +120,6 @@ def get_medical_prompt() -> PromptTemplate:
 
 
 # LLM CHAIN
-# ==============================
 def build_medical_chain(vectordb: FAISS, groq_api_key: str):
     llm = ChatGroq(
         model=LLM_MODEL,
@@ -158,4 +157,5 @@ def main():
         groq_key = st.text_input("Groq API Key", type="password")
         persist_dir = st.text_input("FAISS Index Folder", value=DEFAULT_INDEX_DIR)
         st.caption(f"Embedding Model: {EMBEDDING_MODEL_NAME}")
+
 
