@@ -138,3 +138,24 @@ def build_medical_chain(vectordb: FAISS, groq_api_key: str):
         return_source_documents=True,
     )
 
+# STREAMLIT UI
+def main():
+    st.set_page_config(
+        page_title="Medical Report Analyzer Agent",
+        page_icon="🩺",
+        layout="wide",
+    )
+
+    st.title("🩺 Medical Report Analyzer Agent")
+
+    st.info(
+        "This AI provides educational insights only and does NOT replace professional medical advice."
+    )
+
+    # Sidebar
+    with st.sidebar:
+        st.header("Settings")
+        groq_key = st.text_input("Groq API Key", type="password")
+        persist_dir = st.text_input("FAISS Index Folder", value=DEFAULT_INDEX_DIR)
+        st.caption(f"Embedding Model: {EMBEDDING_MODEL_NAME}")
+
