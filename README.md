@@ -215,7 +215,7 @@ To create a future where <b>every patient can understand their medical data clea
 
 <p align="center">
   <b>Deepesh Singh</b><br/>
-  AI Engineer | Healthcare AI | Generative AI
+  AI Engineer | Healthcare AI | Generative AI | Rag System
 </p>
 
 <hr/>
