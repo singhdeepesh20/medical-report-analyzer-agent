@@ -163,5 +163,29 @@ def main():
         "Upload a PDF medical report or prescription",
         type=["pdf"],
     )
+ # Query Section
+    col1, col2 = st.columns([2, 1])
 
+    default_query = (
+        "Please analyze this medical report. Summarize, highlight abnormal values, "
+        "possible interpretations, red flags, and questions to ask the doctor."
+    )
+
+    with col1:
+        user_query = st.text_area(
+            "What would you like to know?",
+            value=default_query,
+            height=120,
+        )
+
+    with col2:
+        st.markdown("### Quick Prompts")
+        if st.button("Summarize Report"):
+            user_query = "Summarize this report for a patient in simple language."
+        elif st.button("Highlight Abnormal Values"):
+            user_query = "List abnormal values and explain what they may indicate."
+        elif st.button("Red Flags & Next Steps"):
+            user_query = "Identify urgent concerns and recommended next steps."
+
+        
 
