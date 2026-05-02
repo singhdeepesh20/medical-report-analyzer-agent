@@ -187,5 +187,46 @@ def main():
         elif st.button("Red Flags & Next Steps"):
             user_query = "Identify urgent concerns and recommended next steps."
 
-        
+     if st.button("🔎 Analyze"):
+        if not groq_key:
+            st.error("Please enter your Groq API Key.")
+            return
+
+        if not uploaded:
+            st.error("Please upload a PDF report.")
+            return
+
+        try:
+            with st.spinner("Processing document..."):
+                pdf_path = save_uploaded_file(uploaded)
+                index_dir = os.path.join(
+                    persist_dir,
+                    Path(uploaded.name).stem,
+                )
+
+                vectordb = get_or_create_vectordb(pdf_path, index_dir)
+
+            with st.spinner("Analyzing report..."):
+                chain = build_medical_chain(vectordb, groq_key)
+                response = chain({"query": user_query})
+
+            st.subheader("Analysis Result")
+            st.write(response.get("result", "No response generated."))
+
+            with st.expander("Retrieved Source Context"):
+                for i, doc in enumerate(response.get("source_documents", []), start=1):
+                    page = doc.metadata.get("page", "N/A")
+                    st.markdown(f"**Chunk {i} — Page {page}**")
+                    st.code(doc.page_content[:2000])
+
+            st.success(
+                "Analysis complete. Consult a licensed healthcare professional for medical decisions."
+            )
+
+        except Exception as e:
+            st.error(f"Application Error: {str(e)}")
+
+
+if __name__ == "__main__":
+    main()
 
