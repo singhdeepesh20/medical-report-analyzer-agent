@@ -158,4 +158,10 @@ def main():
         persist_dir = st.text_input("FAISS Index Folder", value=DEFAULT_INDEX_DIR)
         st.caption(f"Embedding Model: {EMBEDDING_MODEL_NAME}")
 
+ # Upload
+    uploaded = st.file_uploader(
+        "Upload a PDF medical report or prescription",
+        type=["pdf"],
+    )
+
 
