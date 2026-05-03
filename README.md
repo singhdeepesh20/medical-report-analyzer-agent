@@ -205,7 +205,7 @@ Always consult licensed healthcare professionals for medical decisions.
 <h2> Vision</h2>
 
 <p>
-To build an industry-leading healthcare AI ecosystem where <b>every patient can clearly understand their medical data</b>,docs: refine vision statement for clarity and impact
+To build an industry-leading healthcare AI ecosystem where <b>every patient can clearly understand their medical data</b>,docs: refine vision statement for clarity and impact,secure, and accessible intelligent systems.
 </p>
 
 <hr/>
