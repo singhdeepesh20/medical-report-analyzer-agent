@@ -205,7 +205,7 @@ Always consult licensed healthcare professionals for medical decisions.
 <h2> Vision</h2>
 
 <p>
-To create a future where <b>every patient can understand their medical data clearly</b>, reducing confusion and improving healthcare outcomes through accessible AI systems.
+To build an industry-leading healthcare AI ecosystem where <b>every patient can clearly understand their medical data</b>,
 </p>
 
 <hr/>
