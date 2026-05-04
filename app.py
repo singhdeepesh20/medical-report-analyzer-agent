@@ -88,7 +88,7 @@ def get_or_create_vectordb(pdf_path: str, index_dir: str) -> FAISS:
 
 
 
-def get_medical_prompt() -> PromptTemplate
+def get_medical_prompt() -> PromptTemplate:
     return PromptTemplate(
         template=(
             "You are a careful, patient-friendly medical AI assistant.\n"
