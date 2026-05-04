@@ -6,3 +6,5 @@ faiss-cpu
 sentence-transformers
 pypdf
 pymupdf
+fastapi
+
