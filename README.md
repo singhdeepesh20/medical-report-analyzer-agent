@@ -3,7 +3,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:14b8a6&height=200&section=header&text=Medical%20Report%20Analyzer%20Agent&fontSize=32&fontColor=ffffff" />
 </p>
 
-<h1 align="center"> Medical Repot Analyzer Agent</h1>
+<h1 align="center"> Medical Report Analyzer Agent</h1>
 <h3 align="center">AI-Powered Clinical Report Understanding & Insight Generation</h3>
 
 <hr/>
