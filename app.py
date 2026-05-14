@@ -12,7 +12,7 @@ from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 
 
-# CONFIGURATIO
+# CONFIGURATIOn
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 DEFAULT_INDEX_DIR = "faiss_index"
 CHUNK_SIZE = 1000
