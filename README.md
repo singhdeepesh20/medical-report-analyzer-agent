@@ -4,7 +4,7 @@
 </p>
 
 <h1 align="center"> Medical Report Analyzer Agent</h1>
-<h3 align="center">AI-Powered Clinical Report Understanding & Insight Generatio</h3>
+<h3 align="center">AI-Powered Clinical Report Understanding & Insight Generation</h3>
 
 <hr/>
 
