@@ -15,7 +15,7 @@ from langchain_groq import ChatGroq
 # CONFIGURATIOn
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 DEFAULT_INDEX_DIR = "faiss_index"
-CHUNK_SIZE = 1000
+CHUNK_SIZE = 500
 CHUNK_OVERLAP = 150
 TOP_K_RESULTS = 5
 LLM_MODEL = "llama3-70b-8192"
