@@ -9,4 +9,4 @@ pymupdf
 fastapi
 langchain-classic
 pymupdf
-
+numpy
