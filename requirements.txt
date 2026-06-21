@@ -10,3 +10,4 @@ fastapi
 langchain-classic
 pymupdf
 numpy
+fastapi
