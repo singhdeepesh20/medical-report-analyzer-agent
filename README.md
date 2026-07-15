@@ -12,7 +12,7 @@
 <h2> Overview</h2>
 
 <p>
-<b>Medical Report Analyzer Agent</b> is an AI-powered healthcare intelligence system designed to help patients and caregivers <b>understand complex medical reports with clarity, speed, and actionable insights</b>.
+<b>Medical Report Analyzer </b> is an AI-powered healthcare intelligence system designed to help patients and caregivers <b>understand complex medical reports with clarity, speed, and actionable insights</b>.
 </p>
 
 <p>
